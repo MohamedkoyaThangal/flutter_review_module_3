@@ -66,10 +66,13 @@ class DrawerContent extends StatelessWidget {
                   SizedBox(width: 185,),
                   IconButton(onPressed: (){}, icon: Icon(Icons.settings))
                 ],),
-                const CircleAvatar(
-                  radius: 30,
-                  backgroundImage: NetworkImage(
-                      'https://cdn.pixabay.com/photo/2020/05/17/20/21/cat-5183427_1280.jpg'), // Replace with actual image URL
+                InkWell(
+                  onTap: (){},
+                  child: const CircleAvatar(
+                    radius: 30,
+                    backgroundImage: NetworkImage(
+                        'https://cdn.pixabay.com/photo/2020/05/17/20/21/cat-5183427_1280.jpg'), // Replace with actual image URL
+                  ),
                 ),
                 const SizedBox(height: 9),
                 Column(
